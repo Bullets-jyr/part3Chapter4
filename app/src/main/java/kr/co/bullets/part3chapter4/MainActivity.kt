@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kr.co.bullets.part3chapter4.databinding.ActivityMainBinding
 import kr.co.bullets.part3chapter4.mvc.MvcActivity
+import kr.co.bullets.part3chapter4.mvp.MvpActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMvp() {
-
+        startActivity(Intent(this, MvpActivity::class.java))
     }
 
     fun openMvvm() {
