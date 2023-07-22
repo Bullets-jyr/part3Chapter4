@@ -6,6 +6,7 @@ import android.os.Bundle
 import kr.co.bullets.part3chapter4.databinding.ActivityMainBinding
 import kr.co.bullets.part3chapter4.mvc.MvcActivity
 import kr.co.bullets.part3chapter4.mvp.MvpActivity
+import kr.co.bullets.part3chapter4.mvvm.MvvmActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMvvm() {
-
+        startActivity(Intent(this, MvvmActivity::class.java))
     }
 
     fun openMvi() {
